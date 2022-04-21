@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <!--设置WebApp欢迎主页面-->
+    <welcome-file-list>
+        <welcome-file>userlogin.html</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>HttpServlet</servlet-name>
+        <servlet-class>com.javaweb.Httpservlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HttpServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HttpServletRequest</servlet-name>
+        <servlet-class>com.javaweb.Httpservlet.HttpServletRequestText</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HttpServletRequest</servlet-name>
+        <url-pattern>/requesttext</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Aservlet</servlet-name>
+        <servlet-class>com.javaweb.Httpservlet.Aservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Aservlet</servlet-name>
+        <url-pattern>/a</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Bservlet</servlet-name>
+        <servlet-class>com.javaweb.Httpservlet.Bservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Bservlet</servlet-name>
+        <url-pattern>/b</url-pattern>
+    </servlet-mapping>
+</web-app>

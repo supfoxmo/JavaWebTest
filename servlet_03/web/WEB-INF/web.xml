@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <servlet>
+        <servlet-name>servletConfigTest</servlet-name>
+        <servlet-name>com.javaweb.servlet.ServletConfigTest</servlet-name>
+        <init-param>
+            <param-name>pageSize</param-name>
+            <param-value>10</param-value>
+        </init-param>
+        <init-param>
+            <param-name>color</param-name>
+            <param-value>yellow</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servletConfigTest</servlet-name>
+        <url-pattern>/config</url-pattern>
+    </servlet-mapping>
+</web-app>
